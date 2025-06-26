@@ -17,9 +17,8 @@ BUFFER_SIZE = 1024
 server_socket = None
 running = False
 
+
 # Response header helper function
-
-
 def create_response_header(
     status_code,
     content_type=None,
