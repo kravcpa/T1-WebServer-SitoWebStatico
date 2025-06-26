@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: #FFCF99;
+    font-family: 'Space Mono', monospace;
+    color: #504746;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#displayBox {
+    width: 100px;
+    height: 100px;
+    background-color: #504746;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#numberRow {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.numberButton {
+    width: 60px;
+    height: 60px;
+    background-color: #74A4BC;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.numberButton:hover {
+    transform: scale(1.1);
+}
+
+.correct {
+    background-color: #2EC4B6 !important;
+}
+
+.wrong {
+    background-color: #FF6666 !important;
+}
+
+/* Back button snippet */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2F2F2F;
+    color: white;
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.home-button:hover {
+    background-color: #444;
+}
