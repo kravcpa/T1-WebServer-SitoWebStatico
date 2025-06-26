@@ -171,6 +171,7 @@ def init():
         except OSError:
             break
 
+    server_socket.close()
     print("[Server] Server is shutting down...")
 
 
